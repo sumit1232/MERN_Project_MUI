@@ -165,6 +165,7 @@ const Navbar = () => {
                   </ListItemButton>
                 </List>
               </Collapse>
+
               {/* Employees dropdown */}
               <ListItemButton onClick={handleClick}>
                 <ListItemIcon>
@@ -175,7 +176,8 @@ const Navbar = () => {
               </ListItemButton>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/allemployees">
                     <ListItemIcon>
 
                     </ListItemIcon>
@@ -185,7 +187,8 @@ const Navbar = () => {
               </Collapse>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/addemployee">
                     <ListItemIcon>
 
                     </ListItemIcon>
@@ -195,7 +198,8 @@ const Navbar = () => {
               </Collapse>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/editemplyee">
                     <ListItemIcon>
 
                     </ListItemIcon>
@@ -204,7 +208,8 @@ const Navbar = () => {
                 </List>
               </Collapse> <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/employeeshift">
                     <ListItemIcon>
                     </ListItemIcon>
                     <ListItemText primary="Employee Shift" />
@@ -213,7 +218,8 @@ const Navbar = () => {
               </Collapse>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/employee-profile">
                     <ListItemIcon>
                     </ListItemIcon>
                     <ListItemText primary="Employee Profile" />
