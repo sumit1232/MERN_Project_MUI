@@ -21,6 +21,10 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 
+import { Link } from 'react-router-dom';
+
+
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [opendropdown, setOpendropdown] = React.useState(true);
@@ -88,7 +92,8 @@ const Navbar = () => {
               </ListItemButton>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/dashboard1">
                     <ListItemIcon>
                     </ListItemIcon>
                     <ListItemText primary="Dashboard 1" />
@@ -97,7 +102,8 @@ const Navbar = () => {
               </Collapse>
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/dashboard2">
                     <ListItemIcon>
                     </ListItemIcon>
                     <ListItemText primary="Dashboard 2" />
@@ -112,19 +118,22 @@ const Navbar = () => {
                 <ListItemText primary="Projects" />
                 {opendropdown ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
+
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/allprojects" >
                     <ListItemIcon>
-
                     </ListItemIcon>
-                    <ListItemText primary="All Projects" />
+                    <ListItemText primary="All Projects"/>
                   </ListItemButton>
                 </List>
               </Collapse>
+
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/addprojects" >
                     <ListItemIcon>
 
                     </ListItemIcon>
@@ -135,7 +144,8 @@ const Navbar = () => {
 
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/estimate">
                     <ListItemIcon>
 
                     </ListItemIcon>
@@ -146,7 +156,8 @@ const Navbar = () => {
 
               <Collapse in={opendropdown} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton sx={{ pl: 4 }}>
+                  <ListItemButton sx={{ pl: 4 }}
+                  href="/projectdetails">
                     <ListItemIcon>
 
                     </ListItemIcon>
